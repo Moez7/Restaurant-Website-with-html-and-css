@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat',sans_serif;
+}
+nav{
+	display: flex; //*aligner les éléments*//
+	flex-wrap: wrap;
+	justify-content: center; /*centrer les éléments*/
+	align-items: center; /*les mettre dans la meme ligne*/
+	border-bottom: 5px solid #6f6F6f;/*la droite grise*/
+}
+nav h1{
+	color: #717171;
+	font-family: 'Playfair display', sans_serif; /*modifier la police*/
+	font-size: 30px; /*taille du texte*/	
+nav .onglets{
+	margin-top: 3px; /*aligner bien les titres */
+	margin-left: 300px;/*eloigner le titre ou logo des liens*/
+}
+nav .onglets a{  /*tous les onglets de nav qui sont des liens*/
+	text-decoration: none; /*enlever le silignement*/
+	color: #000;
+	margin-right: 10px; /*espacement de 10px entre chaque lien*/
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px; /*under line*/
+}
+header{
+	display: flex;
+	flex-direction: column;/*empiler les elements en colonne*/
+	align-items: center;
+	background: url('img/1.jpg');
+	background-size: cover;/*l'image couvre la totalité du header*/
+	color: #fff;
+	padding: 40px; /*marge intérieur de 40px*/
+
+}
+header h1{
+	font-family: 'Playfair display', sans_serif;
+	font-size: 50px;	
+}
+header h4{
+	margin-top: -20px;/*réduire l'espace entre les 2 titres*/
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 1px solid #fff;/*souligner h4*/	
+}
+header button{
+	padding: 10px 20px;
+	background-color: #fff;
+	color:black;
+	border: none;
+	font-size: 20px;
+	font-family: 'Playfair display', sans_serif;
+	outline: none;
+	cursor:pointer; 
+}
+.main{
+	margin-top: 40px; /*espacement en haut*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main .content .card{
+	display: flex; /*aligner les éléments right et left*/
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.main .content .card .right img{
+	height: 300px; /*hauteur*/
+	width: 400px;  /*largeur*/
+	margin-top: 5px; /*espacer l'image et le texte*/
+}
+.main .content .card .left{
+	flex:0 0 30%;
+	padding: 20x;
+	background-color: black;
+	color: #fff;
+}
+.main .content .card.right{
+	flex:0 0 70%;
+}
+footer{
+	margin-top: 40px; /*espacer du haut la section principale et le footer*/
+	border-top: 5px solid #6f6F6f; /*el 5at l gris*/
+	background-color: #000;
+	color: #fff;
+	padding: 30px 100px; /*la marge intérieur*/
+}
+footer h1{
+	font-family: 'Playfair display', sans_serif;
+	border-bottom: 1px solid #fff;/*5at blanc twil*/
+	width: 20%; /*réduire le soulignement*/
+	padding-bottom: 5px;
+}
+footer .services{
+	margin-top: -10px;/*diminuer l'espace entre les éléments*/
+	display: flex;
+}
+footer .services .service{
+	margin-right: 30px;
+	padding: 10px;
+}
+footer .services .service p{
+	max-width: 300px;
+}
+footer #contact{
+	color: rgb(181,181,181);
+}
+
+
+@media screen and (max-widht:680px){
+	nav .onglets{
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+	.main .card{
+		margin: 10px;
+
+	}
+	.main .content .card .right img{
+		height: 200px;
+		width: 100%;
+	}
+}
